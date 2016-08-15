@@ -7,7 +7,7 @@ class UrlsController < ApplicationController
   end
 
   def index
-    @url = Url.all
+    @urls = Url.all
   end
 
   def destroy
