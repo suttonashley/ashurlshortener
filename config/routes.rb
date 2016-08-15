@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  get 'urls/new' 
 
-  post 'urls/create' => 'url#create'
+resources :urls
 
-  get 'urls/index'
-
-  get 'urls/destroy'
+  post 'urls/new'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -1,8 +1,8 @@
-<h1>Enter a url that you would like shortened!</h1>
+<h3>Enter a url that you would like shortened!</h3>
 
- Original URL: <%= form_tag urls_create_path do %>
+ Original URL: <%= form_tag urls_new_path do %>
   <%= search_field_tag :term %>
-  <%= submit_tag "Create url" %>
+  <a class="waves-effect waves-light btn"><%= submit_tag "Create url" %></a>
 <% end %>
 
 <%= params[:term] %>
